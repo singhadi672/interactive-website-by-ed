@@ -11,6 +11,7 @@
 body {
   background: #17181a;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 #logo {
@@ -82,6 +83,7 @@ body {
   position: relative;
   flex: 1;
   flex-basis: 25rem;
+  overflow: hidden;
 }
 
 #hero-img img {
@@ -149,9 +151,9 @@ body {
 #reveal-img,
 #reveal-text {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  /* background-color: #17181a; */
+  width: 140%;
+  height: 160%;
+  background-color: #17181a;
   left: 0;
-  top: 0;
+  top: -45%;
 }
