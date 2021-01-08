@@ -119,8 +119,8 @@ main {
   justify-content: space-around;
   z-index: 1;
   opacity: 1;
-  clip-path: circle(50px at 100% -10%);
-  -webkit-clip-path: circle(50px at 100% -10%);
+  clip-path: circle(50px at 50% -10%);
+  -webkit-clip-path: circle(50px at 50% -10%);
 }
 
 #logo-burger {

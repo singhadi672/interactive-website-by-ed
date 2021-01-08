@@ -74,14 +74,14 @@ burger.addEventListener('click',(e)=>{
         gsap.to('#line1',0.5,{rotate:45,y:5,background:"black"});
         gsap.to('#logo',0.5,{color:"black"});
         gsap.to('#line2',0.5,{rotate:-45,y:-5,background:"black"});
-        gsap.to('.nav-bar',1,{clipPath: 'circle(2500px at 100% -10%)'});
+        gsap.to('.nav-bar',1,{clipPath: 'circle(2500px at 50% -10%)'});
         document.body.classList.add('hide');
     }else{
         e.target.classList.remove('active');
         gsap.to('#line1',0.5,{rotate:0,y:0,background:"white"})
         gsap.to('#logo',0.5,{color:"white"})
         gsap.to('#line2',0.5,{rotate:0,y:0,background:"white"})
-        gsap.to('.nav-bar',0.8,{clipPath: 'circle(50px at 100% -10%)'})
+        gsap.to('.nav-bar',0.8,{clipPath: 'circle(50px at 50% -10%)'})
         document.body.classList.remove('hide');
     }
 })

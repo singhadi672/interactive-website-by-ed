@@ -33,11 +33,14 @@
 
 // scrollmagic uses external scripts to work so you can daa them at the bottom to work
 
-const controller = new ScrollMagic.Controller();
+// const controller = new ScrollMagic.Controller();
 
-const exploreScene = new ScrollMagic.Scene({
-    triggerElement: '.fashion',
-    triggerHook: 0.1
-})
-.addIndicators()
-.addTo(controller);
+// const exploreScene = new ScrollMagic.Scene({
+//     triggerElement: '.fashion',
+//     triggerHook: 0.1
+// })
+// .addIndicators()
+// .addTo(controller);
+const item = ['aa','bbbb','cccc'];
+const [i1,i2,i3] = item;
+console.log(i3);
