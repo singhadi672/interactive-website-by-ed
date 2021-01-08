@@ -12,8 +12,11 @@ body {
   background: #17181a;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
-
+main {
+  position: absolute;
+}
 #logo {
   color: white;
 }
@@ -122,6 +125,7 @@ body {
 
 #logo-burger {
   cursor: pointer;
+  z-index: 2;
 }
 
 .nav-links {
@@ -151,9 +155,133 @@ body {
 #reveal-img,
 #reveal-text {
   position: absolute;
-  width: 140%;
-  height: 160%;
+  width: 100%;
+  height: 110%;
   background-color: #17181a;
+  /* background-color: tomato; */
   left: 0;
-  top: -45%;
+  top: -10px;
+}
+.scrollmagic-pin-spacer {
+  position: static !important;
+}
+
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  transition-property: background, transform;
+}
+
+.cursor-active {
+  transform: scale(2);
+  background: slateblue;
+  opacity: 0.8;
+}
+
+.explore-active {
+  transform: scale(2);
+  opacity: 0.9;
+  background: white;
+}
+
+.cursor-text {
+  font-size: 8px;
+  margin-left: 8px;
+}
+
+.hide {
+  overflow: hidden;
+}
+
+.fashion1,
+.fashion2,
+.fashion3 {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  color: #fff;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.fashion-image {
+  height: 90vh;
+  flex-basis: 30rem;
+}
+
+.fashion-text {
+  flex: 1;
+  position: relative;
+  flex-basis: 25rem;
+}
+
+.fashion-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fashion-text h1 {
+  font-size: 5rem;
+  margin: 3rem 0rem;
+}
+
+.fashion1 h1 {
+  color: rgb(86, 124, 228);
+}
+.fashion2 h1 {
+  color: rgb(167, 110, 231);
+}
+.fashion3 h1 {
+  color: rgb(255, 139, 93);
+}
+
+.fashion-text p {
+  margin: 2rem 2rem 0rem 0rem;
+  font-size: 1.5rem;
+  margin-bottom: 10rem;
+}
+
+.fashion-nr {
+  position: absolute;
+  font-size: 10rem;
+  top: 72%;
+  margin-left: 30%;
+  font-weight: bolder;
+  color: rgb(247, 27, 111);
+  opacity: 0.5;
+}
+
+.swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.swipe1 {
+  background-color: tomato;
+  z-index: 5;
+}
+
+.swipe2 {
+  background-color: yellow;
+  z-index: 4;
+}
+
+.swipe3 {
+  background-color: yellowgreen;
+  z-index: 3;
 }
